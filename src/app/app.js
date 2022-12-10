@@ -16,7 +16,7 @@ const itemsData = [
 export const App = () => {
     const appContainer = document.createElement('div');
     appContainer.className = 'app';
-    appContainer.innerHTML = '<h2>This is App component</h2>';
+    appContainer.innerHTML = '<h1>This is App component</h1>';
 
     const searchInput = Input({
         label: 'Search',
