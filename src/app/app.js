@@ -1,17 +1,9 @@
-import { List } from "./list/list";
 import Pizza from './../pizza.png';
+import { List } from "./list/list";
 import { Input } from "./input/input";
+import { pizzaItemsData } from "../data/pizza-list";
 
-const itemsData = [
-    'Никита',
-    'Наташа',
-    'Гриша',
-    'Буреки с тыквой',
-    'Асин невкусный корм',
-    'Праздник к нам приходит',
-    'Селёдка под шубой',
-    '123 зелёных беса',
-];
+const itemsData = pizzaItemsData;
 
 export const App = (onListItemClick) => {
     const appContainer = document.createElement('div');

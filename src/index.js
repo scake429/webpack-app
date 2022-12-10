@@ -1,11 +1,12 @@
 import { App } from './app/app';
-import { Messages } from './app/messages/messages';
+import { Message } from './app/message/message';
 import './style.css';
 
-const sayClickedWord = e => {
-    document.body.appendChild(Messages({text: e.target.textContent}))
+const showClickedInMessage = e => {
+    const message = Message({text: e.target.textContent});
+    document.body.appendChild(message)
 }
-const app = App(sayClickedWord)
+const app = App(showClickedInMessage)
 
 document.body.appendChild(app);
 
