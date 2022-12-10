@@ -1,7 +1,6 @@
 import { App } from './app/app';
 import './style.css';
 
-document.title = 'This is my APP'
 document.body.innerHTML = `
 <h1>Hello Webpack!</h1>
 <p>

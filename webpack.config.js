@@ -8,7 +8,10 @@ module.exports = {
   devServer: {
     static: './dist',
   },  
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({
+    title:'Test APP',
+    favicon:'src/favicon.ico',
+  })],
   module: {
     rules: [
       {
@@ -16,7 +19,7 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
         type: 'asset/resource',
       },      
     ],
