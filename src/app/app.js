@@ -13,7 +13,7 @@ const itemsData = [
     '123 зелёных беса',
 ];
 
-export const App = () => {
+export const App = (onListItemClick) => {
     const appContainer = document.createElement('div');
     appContainer.className = 'app';
     appContainer.innerHTML = '<h1>This is App component</h1>';
@@ -24,7 +24,7 @@ export const App = () => {
             const filteredItems = itemsData
                 .filter(item => (new RegExp(e.target.value, 'ig')).test(item))
             listWrapper.innerHTML = '';
-            const list = List(filteredItems); 
+            const list = List(filteredItems, {onItemClick: onListItemClick}); 
             listWrapper.appendChild(list);
         }
     });
@@ -34,7 +34,7 @@ export const App = () => {
     listWrapper.className = 'list-wrapper';
     appContainer.appendChild(listWrapper);
 
-    const list = List(itemsData);   
+    const list = List(itemsData, {onItemClick: onListItemClick});   
     listWrapper.appendChild(list);
 
     const myIcon = new Image();

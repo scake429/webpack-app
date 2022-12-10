@@ -1,4 +1,4 @@
-export const List = (items) => {
+export const List = (items, params) => {
     
     const wrapper = document.createElement('div');
     wrapper.className = 'items-list'
@@ -6,6 +6,7 @@ export const List = (items) => {
     items.forEach(item => {
         const listItem =  document.createElement('div');  
         listItem.innerHTML = item;
+        if(params?.onItemClick) listItem.addEventListener('click', params.onItemClick)
         wrapper.appendChild(listItem);
     });
 
