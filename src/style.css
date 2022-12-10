@@ -12,10 +12,12 @@ body, html {
     display: inline-block;
     margin: 2rem;
 }
-.items-list{
-    padding: 1rem;
-    width: 40%;
+.list-wrapper{
     display: inline-block;
+    width: 40%;
+    padding: 1rem;
+}
+.items-list{
 }
 .items-list div{
     padding: 1rem;
@@ -23,4 +25,18 @@ body, html {
 }
 .items-list div:hover{
     background: rgba(246, 123, 22, 0.04);
+}
+input{
+    padding: 1rem;
+    color:rgb(64, 64, 64);
+    border-radius: 5px;
+    border: 1px solid rgb(218, 218, 218);
+    outline: none;
+    display: block;
+    font-size: 14px;
+    margin-left: 1rem;
+}
+input:focus{
+    outline: none;
+    border: 1px solid rgb(175, 175, 175);
 }
