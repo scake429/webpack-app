@@ -18,7 +18,13 @@ body{
 .app img{
     display: inline-block;
     margin: 2rem;
+    transition: transform 1s ease;
 }
+.app img:hover{
+    transition: transform 5s ease;
+    transform: rotate(12deg) scale(1.1);
+}
+
 .list-wrapper{
     display: inline-block;
     width: 40%;
