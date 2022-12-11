@@ -6,7 +6,10 @@ export const List = (items, params) => {
     items.forEach(item => {
         const listItem =  document.createElement('div');  
         listItem.innerHTML = item;
-        if(params?.onItemClick) listItem.addEventListener('click', params.onItemClick)
+        if(params?.onItemClick) listItem.addEventListener(
+            'click', 
+            e => params.onItemClick({value: e.target.textContent})
+        )
         wrapper.appendChild(listItem);
     });
 

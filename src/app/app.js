@@ -14,7 +14,7 @@ export const App = (onListItemClick) => {
         label: 'Search',
         onInput: e => {
             const filteredItems = itemsData
-                .filter(item => (new RegExp(e.target.value, 'ig')).test(item))
+                .filter(item => (new RegExp(e.value, 'ig')).test(item))
             listWrapper.innerHTML = '';
             const list = List(filteredItems, {onItemClick: onListItemClick}); 
             listWrapper.appendChild(list);
