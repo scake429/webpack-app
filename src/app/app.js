@@ -6,6 +6,9 @@ import { pizzaItemsData } from "../data/pizza-list";
 const itemsData = pizzaItemsData;
 
 export const App = (onListItemClick) => {
+
+    // output: onListItemClick
+
     const appContainer = document.createElement('div');
     appContainer.className = 'app';
     appContainer.innerHTML = '<h1>This is App component</h1>';

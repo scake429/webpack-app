@@ -1,5 +1,8 @@
 export const List = (items, params) => {
     
+    // input: items
+    // output: params.onItemClick
+    
     const wrapper = document.createElement('div');
     wrapper.className = 'items-list'
     

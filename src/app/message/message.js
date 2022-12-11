@@ -1,4 +1,6 @@
 export const Message = (params) => {
+    
+    // input: params.text
 
     const message = document.createElement('div');
     message.className = 'message'

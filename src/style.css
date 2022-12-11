@@ -28,12 +28,13 @@ body{
 }
 .items-list div{
     padding: 1rem;
-    border-bottom: 1px silver dashed;
+    border-bottom: 1px rgb(220, 220, 220) dashed;
+    cursor: pointer;
 }
 .items-list div:hover{
     background: rgba(246, 123, 22, 0.04);
 }
-input{
+input.form-control {
     padding: 1rem;
     color:rgb(64, 64, 64);
     border-radius: 5px;
@@ -43,7 +44,7 @@ input{
     font-size: 14px;
     margin-left: 1rem;
 }
-input:focus{
+input.form-control:focus{
     outline: none;
     border: 1px solid rgb(175, 175, 175);
 }
