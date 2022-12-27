@@ -1,73 +1,41 @@
-body, html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(60, 60, 60);
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    margin: auto;
-    max-width: 1200px;
-}
-.hello {
-    color: orange;
-}
-.app div ,.app img{
-    vertical-align: top;
-}
-.app img{
-    display: inline-block;
-    margin: 2rem;
-    transition: transform 1s ease;
-}
-.app img:hover{
-    transition: transform 5s ease;
-    transform: rotate(12deg) scale(1.1);
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(27, 27, 27);
 }
 
-.list-wrapper{
-    display: inline-block;
-    width: 40%;
-    padding: 1rem;
+td,th {
+    padding: 5px 20px;
+    border-bottom: 1px solid rgb(214, 214, 214);
 }
-.items-list{
+
+body {
+    width: 1000px;
+    margin:auto;
 }
-.items-list div{
-    padding: 1rem;
-    border-bottom: 1px rgb(220, 220, 220) dashed;
-    cursor: pointer;
+
+table {
+    width: 100%;
 }
-.items-list div:hover{
-    background: rgba(246, 123, 22, 0.04);
+
+th {
+    text-align: left;
+    border-bottom: 2px solid rgb(192, 192, 192);
 }
-input.form-control {
-    padding: 1rem;
-    color:rgb(64, 64, 64);
+
+input{
+    padding: 10px 10px;
     border-radius: 5px;
-    border: 1px solid rgb(218, 218, 218);
     outline: none;
-    display: block;
-    font-size: 14px;
-    margin-left: 1rem;
+    border: 1px solid silver;
+    color: rgb(46, 46, 46);
 }
-input.form-control:focus{
-    outline: none;
-    border: 1px solid rgb(175, 175, 175);
+input:focus{
+    border-color: rgb(127, 181, 184);
 }
 
-@keyframes fadeout {   
-    0%   {opacity: 0; top: 50%; }   
-    10%  {opacity: 1; top: 10%; }   
-    100% {opacity: 0; top: 0%;  }
-}
 .message{
-    position: fixed;
-    left: 50%;
-    top: 10%;
-    padding: 1rem 2rem;
-    background: rgb(255, 217, 112);
-    border-radius: 5px;
-    animation: fadeout 4s ease infinite;
-    border: 1px rgb(255, 246, 226) solid;
-    font-weight: 600;
+    padding: 20px 40px;
+    border: 1px dashed rgb(230, 202, 166);
+    text-align: center;
+    color: dimgrey;
 }
